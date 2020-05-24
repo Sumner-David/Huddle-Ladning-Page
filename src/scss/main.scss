@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5 {
 
 .header {
     display:flex;
+    
     width:100%;
     align-items:center;
     justify-content: space-between;
@@ -47,12 +48,13 @@ h1,h2,h3,h4,h5 {
         padding:10px;
         border: solid 1px $design-pink;
         color:$design-pink;
+        background:#fff;
 
     }
 
     button:active {
         color:#fff;
-        background-color:$dark-pink
+        background-color:$design-pink
 
     }
 }
@@ -415,3 +417,5 @@ h1,h2,h3,h4,h5 {
     
 
 }
+
+@import 'breakpoints'
