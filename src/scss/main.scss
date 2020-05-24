@@ -13,6 +13,7 @@ html {
     font-size: 20px;
     padding:0;
     margin:0;
+    
 }
 body {
     padding:0;
@@ -49,13 +50,23 @@ h1,h2,h3,h4,h5 {
         border: solid 1px $design-pink;
         color:$design-pink;
         background:#fff;
+         transition:all 0.1s ease;
 
     }
 
-    button:active {
-        color:#fff;
-        background-color:$design-pink
+    
 
+    button:hover {
+       color:#fff;
+       background-color:$design-pink;
+        transition:all 0.1s ease;
+    }
+
+    button:active {
+        border: solid 1px $design-pink;
+        color:$design-pink;
+        background:#fff;
+        transition:all 0.1s ease;
     }
 }
 
@@ -86,11 +97,21 @@ h1,h2,h3,h4,h5 {
             font-size:1rem;
             margin:1rem auto 3rem auto;
             box-shadow: 0 5px 15px -5px   rgba(0,0,0,1);
+             transition:all 0.1s ease;
+        }
+
+        
+
+        button:hover {
+            background: $dark-pink;
+            border: solid 1px $dark-pink;
+            transition: all 0.1s ease;
         }
 
         button:active {
-            background:$dark-pink;
-            border: solid 1px $dark-pink;
+            background: $design-pink;
+            border: solid 1px $design-pink;
+            transition: all 0.1s ease;
         }
     }
 
@@ -321,11 +342,19 @@ h1,h2,h3,h4,h5 {
             font-size: 1rem;
             margin: 1rem auto 3rem auto;
             box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 1);
+            transition:all 0.1s ease;
+        }
+
+        button:hover {
+            background: $dark-pink;
+            border: solid 1px $dark-pink;
+            transition: all 0.1s ease;
         }
 
         button:active {
-            background: $dark-pink;
-            border: solid 1px $dark-pink;
+            background: $design-pink;
+            border: solid 1px $design-pink;
+            transition: all 0.1s ease;
         }
     
 
@@ -411,6 +440,18 @@ h1,h2,h3,h4,h5 {
             .submit-button:active {
                 
                 background: $dark-pink
+            }
+
+            .submit-button:hover {
+                background: $dark-pink;
+                border: solid 1px $dark-pink;
+                transition: all 0.1s ease;
+            }
+
+            .submit-button:active {
+                background: $design-pink;
+                border: solid 1px $design-pink;
+                transition: all 0.1s ease;
             }
         }
     }
